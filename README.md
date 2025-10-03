@@ -8,8 +8,7 @@
 This report documents my exam work on developing a **Python console application** that classifies emails as **spam** or **legitimate** using a **logistic regression** model.  
 The answers are structured question by question, as required.
 
-## 1. Dataset (1 point)
-
+## 1. Dataset
 - **Source (exam link):** `max.ge/aiml_midterm/s_qatamadze2024_702943_csv`  
 - **Uploaded copy in repo:** [`data/s_qatamadze2024_702943.csv`](data/s_qatamadze2024_702943.csv)
 
@@ -157,7 +156,7 @@ Probability(spam) ≈ 0.96 → class = spam
 
 ---
 
-## 6. Manually Composed Legitimate Email (1 point)
+## 6. Manually Composed Legitimate Email
 
 **File:** `data/sample_legit.txt`
 
