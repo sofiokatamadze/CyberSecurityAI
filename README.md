@@ -1,5 +1,4 @@
 
-````markdown
 # 📧 Spam Email Detection — Logistic Regression (Midterm Exam Report)
 
 **Author:** Sofio Katamadze  
@@ -8,8 +7,6 @@
 
 This report documents my exam work on developing a **Python console application** that classifies emails as **spam** or **legitimate** using a **logistic regression** model.  
 The answers are structured question by question, as required.
-
----
 
 ## 1. Dataset (1 point)
 
@@ -24,7 +21,7 @@ The dataset contains email features:
 - `spam_word_count` — number of words from a predefined spammy dictionary  
 - `is_spam` — target label (`spam` or `legitimate`)  
 
----
+
 
 ## 2. Logistic Regression Training
 
