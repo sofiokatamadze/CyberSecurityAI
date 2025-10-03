@@ -93,6 +93,9 @@ Where:
 * 11 = False Positives (legitimate marked as spam)
 * 21 = False Negatives (spam marked as legitimate)
 
+The evaluation code is implemented in src/evaluate.py. It uses sklearn.metrics.confusion_matrix to compute the confusion matrix and accuracy_score for accuracy. 
+The model’s predictions on the 30% hold-out set are compared to true labels, and the results are printed as well as visualized in figs/confusion_matrix.png. This ensures both numerical and visual evaluation of performance.
+
 ---
 
 ## 4. Predicting Raw Email Text
@@ -154,6 +157,10 @@ Click http://spam.example/deal now to claim your prize!!!
 Probability(spam) ≈ 0.96 → class = spam
 ```
 
+This email was intentionally written to trigger the model’s spam detection by including:
+Multiple spam keywords (e.g., “congratulations”, “winner”, “claim your prize”).
+A suspicious link (http://spam.example/deal
+
 ---
 
 ## 6. Manually Composed Legitimate Email
@@ -172,6 +179,12 @@ Sofio
 ```
 Probability(spam) = 0.0001 → class = legitimate
 ```
+This email was designed to be recognized as legitimate because it:
+Contains no spammy keywords.
+Does not include any links.
+Uses a neutral, professional tone.
+Has normal word count without ALL-CAPS words.
+These characteristics keep the spam_word_count and links features at zero, which drives the model to classify it as legitimate.
 
 ---
 
